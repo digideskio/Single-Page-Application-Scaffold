@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 					findNestedDependencies: true,
 					optimize: 'uglify2',
 					stubModules: ['text', 'html', 'css'],
-					include: ['app.start'],
+					include: ['handlebars', 'app.start'],
 					insertRequire: ['app.start']
 				}
 			}
