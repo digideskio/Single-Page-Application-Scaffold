@@ -18,14 +18,22 @@ module.exports = function(grunt) {
 					insertRequire: ['app.start']
 				}
 			}
-		}
+		},
+		cssmin: {
+			files: {
+				src: ['public/app.min.css'],
+				dest: 'public/app.min.css'
+			},
+			options: {}
+		},
 	});
 
 	grunt.registerTask('default', [
-		'requirejs'
+		'requirejs',
+		'cssmin'
 	]);
 
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
-	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 
 };
