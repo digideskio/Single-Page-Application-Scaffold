@@ -14,10 +14,6 @@ module.exports = function(grunt) {
 					findNestedDependencies: true,
 					optimize: 'uglify2',
 					stubModules: ['text', 'html', 'css'],
-					paths: {
-						handlebars: 'bower_components/handlebars/handlebars.runtime.amd'
-					},
-					exclude: ['normalize', 'css-builder'],
 					include: ['app.start'],
 					insertRequire: ['app.start']
 				}
@@ -30,5 +26,6 @@ module.exports = function(grunt) {
 	]);
 
 	grunt.loadNpmTasks('grunt-contrib-requirejs');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 
 };

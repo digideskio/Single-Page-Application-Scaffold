@@ -8,7 +8,7 @@ define(function (require, exports, module) {
 		},
 		home: function(){
 
-			require(['home/home'], function(Home){
+			require(['ui/home/home'], function(Home){
 
 				var home = new Home();
 				home.render();

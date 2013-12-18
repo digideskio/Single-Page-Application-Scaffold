@@ -1,5 +1,7 @@
 define(function (require, exports, module) {
 
+	require('bootstrap_js');
+	require('css!bootstrap_css');
 	var Backbone = require('backbone');
 
 	require('css!./home');
